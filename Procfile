@@ -1,1 +1,1 @@
-web: gunicorn interactiva:app
+web: gunicorn dijkstra:app
