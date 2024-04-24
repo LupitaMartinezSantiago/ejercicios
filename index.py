@@ -31,7 +31,7 @@ def buscar_BCU():
 def buscar_dijkstra():
     # Aquí puedes implementar la lógica para buscar con Dijkstra
     # Por ahora, solo devuelve un resultado de ejemplo
-    resultado_dijkstra = "Camino más corto desde el nodo 1 hasta el nodo 7: ['1', '2', '3', '5', '7']"
+    resultado_dijkstra = "Camino más corto : ['1', '2', '3', '5', '7']"
     return render_template('index.html', resultado_dijkstra=resultado_dijkstra)
 
 if __name__ == '__main__':
