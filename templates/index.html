@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BÚSQUEDAS</title>
+    <title></title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <script>
         window.addEventListener('DOMContentLoaded', (event) => {
-            // Ocultar el área de resultados al cargar la página
-            document.getElementById('resultado_BCU').style.display = 'none';
-
             // Agregar un evento click al botón 'Buscar'
             document.getElementById('buscar_BCU').addEventListener('click', function() {
                 // Mostrar el área de resultados al hacer clic en el botón
@@ -19,22 +16,11 @@
     </script>
 </head>
 <body>
-    <h2>Resultado busqueda de costo uniforme</h2>
-    
-    <!-- Botón para buscar -->
-    <button id="buscar_BCU">Calcular BCU</button>
-
-    <!-- Área para mostrar resultados -->
-    <div id="resultado_BCU">
-        <h3>Resultado:</h3>
-        <p>['EDO.MEX', 'SLP', 'QRO', 'HIDALGO']</p>
-        <p>Costo: 1106 KM</p>
-    </div>
 
     <h2>Resultado de busqueda Dijkstra</h2>
     <!-- Formulario para la búsqueda de Dijkstra -->
     <form action="/buscar_dijkstra" method="POST">
-        <button type="submit">Calcular disjkstra</button>
+        <button type="submit">Dijkstra</button>
     </form>
     {% if resultado_dijkstra %}
         <h3>Resultado:</h3>
