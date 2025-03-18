@@ -30,8 +30,9 @@ def buscar_BCU():
 @app.route('/buscar_dijkstra', methods=['POST'])
 def buscar_dijkstra():
     # Aquí puedes implementar la lógica para buscar con Dijkstra
-    # Por ahora, solo devuelve un resultado de ejemplo
+ 
     resultado_dijkstra = "Camino más corto : ['1', '2', '3', '5', '7']"
+    # Por ahora, solo devuelve un resultado de ejemplo
     return render_template('index.html', resultado_dijkstra=resultado_dijkstra)
 
 if __name__ == '__main__':
