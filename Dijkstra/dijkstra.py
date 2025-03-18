@@ -36,7 +36,7 @@ grafo = {
     '6': {'7': 3},
     '7': {}
 }
-
+# Por ahora, solo devuelve un resultado de ejemplo
 salida = '1'
 nodo_destino = '7'  # Cambia este valor al nodo al que deseas llegar
 previos = dijkstra(grafo, salida)
