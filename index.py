@@ -28,8 +28,9 @@ def buscar_BCU():
     return jsonify({'resultado_BCU': resultado, 'costo_BCU': costo_BCU})
 
 @app.route('/buscar_dijkstra', methods=['POST'])
+# Aquí puedes implementar la lógica para buscar con Dijkstra
 def buscar_dijkstra():
-    # Aquí puedes implementar la lógica para buscar con Dijkstra
+    
  
     resultado_dijkstra = "Camino más corto : ['1', '2', '3', '5', '7']"
     # Por ahora, solo devuelve un resultado de ejemplo
